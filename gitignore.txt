@@ -1,0 +1,15 @@
+# Node.js
+node_modules/
+
+# Firebase files (firebase settings and secrets)
+.firebase/
+firebase.json
+firestore.rules
+firestore.indexes.json
+
+# Build directory (output from React app build process)
+build/
+
+# .env file (for environment variables)
+.env
+
