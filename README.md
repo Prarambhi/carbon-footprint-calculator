@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Gamified Carbon Footprint Calculator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a web-based application designed to help users calculate their carbon footprint and incentivize eco-friendly behavior through gamification. The platform integrates Firebase for authentication and data storage, providing a seamless user experience.
 
-## Available Scripts
+## Features
+- Carbon footprint calculation based on user activities.
+- Gamified challenges to promote sustainable practices.
+- Reward system that allows users to earn and redeem points.
+- Secure authentication using Firebase.
+- Responsive and interactive user interface built with React.js.
 
-In the project directory, you can run:
+## Technology Stack
+- **Frontend:** React.js (including animations)
+- **Backend:** Firebase (Authentication & Firestore)
+- **Hosting:** Firebase Hosting
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Clone the Repository
+```sh
+git clone https://github.com/your-username/carbon-footprint-calculator.git
+cd carbon-footprint-calculator
+```
 
-### `npm run build`
+### Install Dependencies
+```sh
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Configure Environment Variables
+Create a `.env` file in the root directory and add the following:
+```
+REACT_APP_FIREBASE_API_KEY=your_api_key_here
+REACT_APP_FIREBASE_AUTH_DOMAIN=your_auth_domain_here
+REACT_APP_FIREBASE_PROJECT_ID=your_project_id
+REACT_APP_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+REACT_APP_FIREBASE_APP_ID=your_app_id
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Run the Development Server
+```sh
+npm start
+```
+The application will be available at `http://localhost:3000/`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Deployment Using Firebase Hosting
+1. Install Firebase CLI:
+   ```sh
+   npm install -g firebase-tools
+   ```
+2. Log in to Firebase:
+   ```sh
+   firebase login
+   ```
+3. Initialize Firebase Hosting:
+   ```sh
+   firebase init hosting
+   ```
+4. Build the project:
+   ```sh
+   npm run build
+   ```
+5. Deploy the application:
+   ```sh
+   firebase deploy
+   ```
+Upon successful deployment, Firebase will generate a live URL for the application.
 
-### `npm run eject`
+## License
+This project is licensed under the [MIT License](LICENSE).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
