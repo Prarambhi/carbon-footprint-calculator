@@ -1,0 +1,169 @@
+/* General Dashboard Container */
+.dashboard-container {
+    height: 100vh;
+    width: 100vw;
+    overflow-y: auto;
+    padding: 50px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    /* Background Image */
+    background: url("https://t3.ftcdn.net/jpg/03/56/56/14/360_F_356561481_e81mNyXEK2QcvsblmVniCzsDMigNrFqM.jpg") no-repeat center center/cover;
+}
+
+
+/* Dashboard Title */
+.dashboard-title {
+    text-align: center;
+    color: #2d8f7d;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/* Dashboard Grid - 2x2 Layout */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 Columns */
+    grid-template-rows: repeat(2, auto); /* 2 Rows */
+    gap: 30px; /* Space between cards */
+    width: 90%;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Larger Dashboard Cards - Glassmorphism Style */
+.dashboard-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 50px; /* Increased Padding */
+    border-radius: 20px; /* More Rounded */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 1.5rem; /* Larger Font */
+    font-weight: bold;
+    color: #2d8f7d;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    min-height: 200px; /* Ensures uniform card size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hover Effects */
+.dashboard-card:hover {
+    background: #2d8f7d;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Carbon Progress Bar */
+.carbon-progress-bar {
+    background: #e0e0e0;
+    border-radius: 10px;
+    height: 12px;
+    width: 100%;
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-fill {
+    background: linear-gradient(90deg, #2d8f7d, #49a78d);
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+}
+
+/* Challenge Items */
+.challenge-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 12px;
+    transition: transform 0.2s ease;
+}
+
+.challenge-item:hover {
+    transform: scale(1.05);
+}
+
+/* Buttons */
+.challenge-button,
+.next-buttons button {
+    background: #2d8f7d;
+    color: white;
+    border: none;
+    padding: 15px 25px; /* Bigger Buttons */
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.challenge-button:disabled {
+    background: #e0e0e0;
+    cursor: not-allowed;
+}
+
+.challenge-button:hover:not(:disabled),
+.next-buttons button:hover {
+    background: #1f6f5b;
+    transform: scale(1.07);
+}
+
+/* Completed Challenges */
+.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+/* Scrollbar Styling */
+.dashboard-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.dashboard-container::-webkit-scrollbar-thumb {
+    background: #2d8f7d;
+    border-radius: 5px;
+}
+
+.dashboard-container::-webkit-scrollbar-track {
+    background: #e0e0e0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-container {
+        padding: 20px;
+    }
+
+    .dashboard-title {
+        font-size: 2rem;
+    }
+
+    /* Change layout to 1 column on small screens */
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .dashboard-card {
+        font-size: 1.2rem;
+        padding: 30px;
+        min-height: 180px;
+    }
+}

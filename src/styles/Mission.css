@@ -1,0 +1,169 @@
+/* Mission Page Container */
+.mission-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #eafaf1;
+    color: #2d6a4f;
+    font-family: "Arial", sans-serif;
+    text-align: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.mission-navbar {
+    width: 100%;
+    background-color: #2d6a4f;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Back Button */
+.back-button {
+    background-color: #2d6a4f;
+    color: white;
+    padding: 8px 16px;
+    font-size: 1rem;
+    font-weight: 300;
+    border: none;
+    width: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.back-button:hover {
+    background-color: #d8f3dc;
+    transform: scale(1.05);
+}
+
+/* Mission Header */
+.mission-header {
+    background: #226848;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 900px;
+    width: 90%;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 80px;
+}
+
+.mission-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+
+}
+
+.mission-header p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Mission Sections */
+.mission-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Rectangular Mission Sections */
+.mission-section {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.mission-section:hover {
+    transform: scale(1.02);
+}
+
+.mission-section h2 {
+    color: #1b4d3e;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.mission-section p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Call to Action Footer */
+.mission-footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 30px;
+    background: #d8f3dc;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mission-footer h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.mission-footer p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Get Started Button */
+.mission-button {
+    background-color: #2d6a4f;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.mission-button:hover {
+    background-color: #1b4d3e;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mission-header h1 {
+        font-size: 2rem;
+    }
+
+    .mission-header p {
+        font-size: 1rem;
+    }
+
+    .mission-navbar {
+        padding: 12px;
+    }
+
+    .back-button {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+}

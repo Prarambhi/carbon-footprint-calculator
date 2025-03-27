@@ -1,0 +1,166 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    color: #2d6a4f;
+    font-family: "Arial", sans-serif;
+    text-align: center;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    
+    /* 🌿 Background Image */
+    background-image: url('../assets/images/about-bg.jpg');  /* Adjust the path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* Navbar */
+.about-navbar {
+    width: 100%;
+    background-color: #2d6a4f;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Back Button */
+.back-button {
+    background-color: #2d6a4f;
+    color: #fcfcfc;
+    padding: 8px 16px;
+    width: 250px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.back-button:hover {
+    background-color: #d8f3dc;
+    transform: scale(1.05);
+}
+
+/* Vision Section */
+.about-header {
+    background: #226848;
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 900px;
+    width: 90%;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 80px;
+}
+
+.about-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+h1 {
+    color: #f5f8f6; /* Example color (greenish-blue) */
+    font-size: 3rem; /* Optional: change size */
+}
+
+h2 {
+    color: #f5f8f6; /* Example color (greenish-blue) */
+    font-size: 3rem; /* Optional: change size */
+}
+
+
+
+.about-header p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Team Section */
+.team-section {
+    margin-top: 50px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.team-section h2 {
+    font-size: 2rem;
+    color: #1b4d3e;
+    margin-bottom: 20px;
+}
+
+/* Team Members Grid */
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Team Member Cards */
+.team-member {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    font-size: 1.4rem;
+    color: #1b4d3e;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-header h1 {
+        font-size: 2rem;
+    }
+
+    .about-header p {
+        font-size: 1rem;
+    }
+
+    .about-navbar {
+        padding: 12px;
+    }
+
+    .back-button {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
