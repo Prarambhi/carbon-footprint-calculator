@@ -88,7 +88,7 @@ The application will be available at `http://localhost:3000/`.
 Upon successful deployment, Firebase will generate a live URL for the application.
 
 ## Contributors
-- [Prarambhi Kharose](https://github.com/prarambhi-k)
+- [Prarambhi Kharose](https://github.com/Prarambhi)
 - [Vishnu Priya Sahu](https://github.com/Vishnu-Priya-Sahu)
 
 ## License
