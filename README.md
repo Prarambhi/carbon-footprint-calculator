@@ -9,14 +9,32 @@ This project is a web-based application designed to help users calculate their c
 - Secure authentication using Firebase.
 - Responsive and interactive user interface built with React.js.
 
+## Screenshots
+
+### Landing Page
+![Landing Page](photos/carbon-footprint-landing.png)
+
+### Authentication
+![Login Page](photos/auth.png)
+
+### Dashboard
+![Dashboard](photos/dashboard.png)
+
+### Activity Tracking
+![Activity Quiz](photos/quiz.png)
+
+### Rewards System
+![Rewards Page](photos/rewards.png)
+
+### Challenges
+![Tasks Page](photos/tasks.png)
+
 ## Technology Stack
 - **Frontend:** React.js (including animations)
 - **Backend:** Firebase (Authentication & Firestore)
 - **Hosting:** Firebase Hosting
 
-
-
-
+## Getting Started
 
 ### Clone the Repository
 ```sh
@@ -69,8 +87,9 @@ The application will be available at `http://localhost:3000/`.
    ```
 Upon successful deployment, Firebase will generate a live URL for the application.
 
+## Contributors
+- [Prarambhi Kharose](https://github.com/prarambhi-k)
+- [Vishnu Priya Sahu](https://github.com/Vishnu-Priya-Sahu)
+
 ## License
 This project is licensed under the [MIT License](LICENSE).
-
-
-
