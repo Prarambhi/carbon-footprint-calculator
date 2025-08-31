@@ -1,4 +1,9 @@
 # Gamified Carbon Footprint Calculator
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![Firebase](https://img.shields.io/badge/Firebase-FFA611?style=for-the-badge&logo=firebase&logoColor=white)](https://firebase.google.com/)
+[![Authentication](https://img.shields.io/badge/Firebase%20Auth-4285F4?style=for-the-badge&logo=firebase&logoColor=white)](https://firebase.google.com/docs/auth)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+
 
 This project is a web-based application designed to help users calculate their carbon footprint and incentivize eco-friendly behavior through gamification. The platform integrates Firebase for authentication and data storage, providing a seamless user experience.
 
